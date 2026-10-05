@@ -10,18 +10,14 @@
 <body>
     <main>
         <h1>Média das notas:</h1>
-        <?php
-                function calcularMedia($nota1, $nota2, $aluno1){
-                    return "A média das notas do aluno  " . $aluno1 . " é " . ($nota1 + $nota2)/2 . " pontos.";
-                }
-            ?>
+        
         <p>
             <?php
                 $media = calcularMedia(3, 10, "Frederico");
                 echo $media;
             ?>
         </p>
-        
+
         <p>
             <?php
                 $media = calcularMedia(8, 10, "Igor Kendi");
@@ -30,4 +26,9 @@
         </p>
     </main>
 </body>
+<?php
+    function calcularMedia($nota1, $nota2, $aluno1){
+        return "A média das notas do aluno  " . $aluno1 . " é " . ($nota1 + $nota2)/2 . " pontos.";
+    }
+?>
 </html>
